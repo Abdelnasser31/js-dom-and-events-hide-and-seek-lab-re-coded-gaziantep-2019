@@ -5,8 +5,8 @@ function nestedTarget() {
   return document.querySelector('#nested .target');
 }
 function increaseRankBy(n) {
-  let lis = document.querySelectorAll('.ranked-list li');
-  for (let i = 0 ; i < lis.length ; i++ ){
-    lis[i] = parseInt(lis[i].innerHTML) + n;
-  }
+  let rankedLists = document.querySelectorAll('.ranked-list');
+  const firstRankedList =  rankedLists[0];
+  const secondRankedLIst = rankedLists[1];
+  
 }
