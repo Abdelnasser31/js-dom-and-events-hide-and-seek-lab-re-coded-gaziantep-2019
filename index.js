@@ -4,6 +4,7 @@ function getFirstSelector(selector) {
 function nestedTarget() {
   return document.querySelector('#nested .target');
 }
+
 function increaseRankBy(n) {
   let rankedLists = document.querySelectorAll('.ranked-list');
   const firstRankedList =  rankedLists[0];
@@ -18,4 +19,10 @@ function increaseRankBy(n) {
     children[i].innerHTML = parseInt(children[i].innerHTML) + n; 
   }
   
+}
+
+function iterateOverElements(children) {
+   for( let i = 0 ; i < children.length; i++ ) {
+    children[i].innerHTML = parseInt(children[i].innerHTML) + n; 
+  }
 }
