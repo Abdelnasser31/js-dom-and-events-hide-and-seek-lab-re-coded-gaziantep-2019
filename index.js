@@ -14,10 +14,10 @@ function increaseRankBy(n) {
   // for( let i = 0 ; i < children.length; i++ ) {
   //   children[i].innerHTML = parseInt(children[i].innerHTML) + n; 
   // }
-  iterateOverElements(children);
+  iterateOverElements(children,n);
   
   children = secondRankedLIst.children;
-  iterateOverElements(children);
+  iterateOverElements(children,n);
   
   // for( let i = 0 ; i < children.length; i++ ) {
   //   children[i].innerHTML = parseInt(children[i].innerHTML) + n; 
@@ -25,7 +25,7 @@ function increaseRankBy(n) {
   
 }
 
-function iterateOverElements(children) {
+function iterateOverElements(children,n) {
    for( let i = 0 ; i < children.length; i++ ) {
     children[i].innerHTML = parseInt(children[i].innerHTML) + n; 
   }
